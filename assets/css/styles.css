@@ -332,3 +332,61 @@ a {
 .courses .list-item .cta-btn:hover {
     background: var(--second-color);
 }
+
+/* -------------COMMENT-QUOTES------------- */
+
+.comment-quotes {
+    background: #2e2100;
+    margin-top: 200px;
+}
+
+.comment-quotes .quotes {
+    display: flex;
+    padding: 96px 0;
+}
+
+.quotes .info {
+    flex: 1;
+}
+
+.quotes .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.quotes .info .name {
+    margin-top: 18px;
+    font-family: "Sen";
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #f7f7f7;
+}
+
+.quotes .info .desc {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.6;
+    color: #bfbcb3;
+}
+
+.quotes .info .icon {
+    margin-top: 28px;
+}
+
+.quotes .desc-quote {
+    position: relative;
+    flex: 2;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #ffffff;
+}
+
+.desc-quote img {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
