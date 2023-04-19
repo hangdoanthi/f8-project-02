@@ -3,8 +3,8 @@
 }
 
 :root {
-    --primary-color: #ffb900;
-    --second-color: #171100;
+    --primary-color: #171100;
+    --second-color: #ffb900;
 }
 
 html,
@@ -36,7 +36,7 @@ a {
 .btn {
     display: inline-block;
     min-width: 137px;
-    padding: 17px 38px;
+    padding: 17px 18px;
     background: var(--primary-color);
     border-radius: 999px;
     font-weight: 600;
@@ -95,10 +95,12 @@ a {
 }
 
 .navbar .action-btn {
-    background-color: var(--second-color);
-    width: 144px;
+    background-color: var(--primary-color);
+    min-width: 144px;
     margin-left: auto;
 }
+
+/* -------------HERO------------- */
 
 .hero {
     background: #fffcf4;
@@ -196,16 +198,22 @@ a {
 
 .hero .info .btn {
     min-width: 180px;
-    padding: 24px 38px;
+    padding: 24px 18px;
+    background: var(--second-color);
 }
 
-.hero .info .btn-video img {
+.hero .info .video {
+    display: flex;
+    align-items: center;
+}
+
+.hero .info .video img {
     display: inline-block;
     margin-left: 10px;
     margin-bottom: -13px;
 }
 
-.hero .info .video {
+.hero .info span {
     font-weight: 600;
     font-size: 1.8rem;
     color: #171100;
@@ -230,4 +238,97 @@ a {
     font-size: 4.4rem;
     color: #171100;
     margin-right: 12px;
+}
+
+/* -------------COURSES------------- */
+
+.courses header .sub-title {
+    font-family: "Sen";
+    font-weight: 700;
+    font-size: 3.8rem;
+    letter-spacing: -0.02em;
+    color: #171100;
+    padding-top: 200px;
+}
+
+.courses .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses .row .desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+    width: 40%;
+    margin-top: 16px;
+}
+
+.courses .row .icon {
+    margin-right: 18px;
+}
+
+.courses .list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.courses .list-item {
+    flex: 1;
+    border-radius: 12px;
+    border: 1px solid #e2dfda;
+}
+
+.courses .list-item:hover {
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+
+.courses .list-item .thumb {
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.courses .body {
+    padding: 16px 22px 22px;
+}
+
+.courses .list-item .title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.courses .list-item .desc {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.courses .list-item .info {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses .list-item .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #171100;
+}
+
+.courses .list-item .cta-btn {
+    background: var(--primary-color);
+    min-width: 118px;
+}
+
+.courses .list-item .cta-btn:hover {
+    background: var(--second-color);
 }
