@@ -666,7 +666,8 @@ footer .footer .body {
     margin-top: 43px;
 }
 
-.footer .column .list-item li {
+.footer .column .list-item li,
+.footer .column .list-item a {
     margin-top: 12px;
     font-weight: 400;
     line-height: 1.86;
