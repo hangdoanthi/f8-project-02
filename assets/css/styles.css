@@ -457,7 +457,6 @@ a {
     background: var(--second-color);
 }
 
-
 /* -------------JOIN-LESSON------------- */
 
 .join-lesson .lesson {
@@ -501,13 +500,14 @@ a {
     object-fit: cover;
 }
 
-
 /* -------------OUR-BLOG------------- */
 
+.our-blog {
+    background: #fffcf4;
+}
 .our-blog .blog {
     margin-top: 200px;
     padding: 96px 0;
-    background: #fffcf4;
 }
 
 .our-blog .blog .row {
@@ -600,4 +600,88 @@ a {
     margin-top: 38px;
     display: flex;
     justify-content: center;
+}
+
+/* -------------FOOTER------------- */
+
+footer {
+    padding: 96px 0 28px;
+    background: #2e2100;
+}
+
+footer .footer .body {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554b;
+}
+
+.footer .info {
+    width: 23%;
+}
+
+.footer .info .desc {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+
+.footer .info .row {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+}
+
+.footer .column {
+    margin-left: 145px;
+    display: flex;
+    gap: 130px;
+    justify-content: space-between;
+}
+
+.footer .column .list:not(:last-child) {
+    min-width: 18%;
+}
+
+.footer .column .title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #ffffff;
+    position: relative;
+}
+
+.footer .column .title::before {
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 130px;
+    height: 1px;
+    background: #59554b;
+}
+
+.footer .column .list-item {
+    margin-top: 43px;
+}
+
+.footer .column .list-item li {
+    margin-top: 12px;
+    font-weight: 400;
+    line-height: 1.86;
+    font-size: 1.4rem;
+    color: #bfbcb2;
+}
+
+.footer .column .list-item span {
+    font-weight: 600;
+}
+
+.footer .copyright {
+    margin-top: 28px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #807d74;
 }
