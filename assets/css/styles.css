@@ -50,6 +50,13 @@ a {
     text-decoration: underline;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 3);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 /* ------HEADER------- */
 .header {
     position: sticky;
@@ -342,11 +349,11 @@ a {
 
 .comment-quotes .quotes {
     display: flex;
-    padding: 96px 0;
 }
 
 .quotes .info {
     flex: 1;
+    padding: 96px 0;
 }
 
 .quotes .avatar {
@@ -383,10 +390,71 @@ a {
     font-size: 2.6rem;
     line-height: 1.54;
     color: #ffffff;
+    padding: 124px 0 96px;
 }
 
 .desc-quote img {
     position: absolute;
-    top: -30px;
+    top: 94px;
     left: -30px;
 }
+
+/* -------------LEARNING OUTCOMES------------- */
+
+.learning-outcomes .report {
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+}
+
+.report .img-block,
+.report .body {
+    width: 50%;
+}
+
+.report .img-block {
+    display: flex;
+    gap: 30px;
+    height: 438px;
+    border-radius: 16px;
+}
+
+.report .img-block .image {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.report .img-block .image-1 {
+    align-self: flex-end;
+}
+
+.report .body {
+    margin-left: 117px;
+    padding: 58px 0;
+}
+
+.report .body .title {
+    font-family: "Sen";
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.report .body .desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+}
+
+.report .body .btn {
+    margin-top: 32px;
+    background: var(--second-color);
+}
+
+
