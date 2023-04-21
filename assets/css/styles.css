@@ -60,6 +60,18 @@ a {
     overflow: hidden;
 }
 
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.line-clamp.line-1 {
+    --line-clamp: 1;
+}
+
+.break-all {
+    word-wrap: break-word;
+}
+
 /* ------HEADER------- */
 .header {
     position: sticky;
@@ -355,6 +367,7 @@ a {
 }
 
 .courses .list-item .title a {
+    padding-right: 6px;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
