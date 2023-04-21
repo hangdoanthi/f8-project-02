@@ -63,18 +63,22 @@ a {
     top: -30px;
     z-index: 1;
     background: #fffcf4;
-    padding-top: 36px;
-    padding-bottom: 6px;
+    padding: 36px 0px 6px;
 }
 
-.navbar {
+.header .body {
     display: flex;
     align-items: center;
 }
 
+.navbar {
+    margin-left: auto;
+    /* kéo ae sau nó sang phải */
+}
+
 .navbar ul {
     display: flex;
-    margin-left: 491px;
+    /* margin-left: 491px; */
 }
 
 .navbar ul a {
@@ -87,24 +91,26 @@ a {
 
 .navbar ul a:hover {
     color: #171100;
-    font-weight: 600;
+    /* font-weight: 600; */
+    /* bị giật đẩy nội dung xung quanh  và cách khắc phục*/
+    text-shadow: 1px 0 0 currentColor;
 }
 .navbar ul a:hover::before {
     content: "";
-    width: 10px;
-    height: 2.2px;
+    width: 12px;
+    height: 2px;
     display: inline-block;
     position: absolute;
     background-color: #171100;
-    bottom: 7px;
+    bottom: 6px;
     margin-left: 1px;
-    border-radius: 2px;
+    border-radius: 1px;
 }
 
-.navbar .action-btn {
-    background-color: var(--primary-color);
+.header .action-btn {
     min-width: 144px;
-    margin-left: auto;
+    margin-left: 49px;
+    /* margin-left: auto; */
 }
 
 /* -------------HERO------------- */
