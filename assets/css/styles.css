@@ -5,6 +5,7 @@
 :root {
     --primary-color: #171100;
     --second-color: #ffb900;
+    --second-font: Sen, sans-serif;
 }
 
 html,
@@ -36,7 +37,8 @@ a {
 .btn {
     display: inline-block;
     min-width: 137px;
-    padding: 17px 18px;
+    padding: 0px 18px;
+    line-height: 50px;
     background: var(--primary-color);
     border-radius: 999px;
     font-weight: 600;
@@ -118,24 +120,20 @@ a {
 .hero {
     background: #fffcf4;
 }
-.hero .content {
+.hero .body {
     display: flex;
-    flex-grow: 1;
     padding-top: 58px;
     padding-bottom: 65px;
 }
 
-.hero .img-block,
-.hero .info {
-    width: 50%;
-}
-
 .hero .img-block {
+    width: 48%;
     position: relative;
 }
 
 .hero .img-block .image {
     display: block;
+    /* hoặc dùng vertical-align: bottom; */
     margin-left: 0;
     width: 470px;
     height: 685px;
@@ -146,9 +144,10 @@ a {
 .img-block .courses-box {
     position: absolute;
     bottom: 48px;
-    right: 20px;
+    right: 0px;
     width: 270px;
-    height: 244px;
+    /* height: 244px; */
+    /* không đặt chiều cao sau này thêm bớt item nó tự thích nghi */
     background: #ffffff;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
@@ -159,21 +158,20 @@ a {
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-top: 14px;
+    /* margin-top: 14px; */
 }
 
-.img-block .courses-box .item:first-child {
-    margin-top: 0;
+.img-block .courses-box .item + .item {
+    margin-top: 22px;
 }
 
 .courses-box .item .desc {
-    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
     color: #5f5b53;
 }
 
-.courses-box .item strong {
+.courses-box .item .title {
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
@@ -181,13 +179,13 @@ a {
 }
 
 .hero .info {
-    margin-top: 64px;
-    padding-left: 102px;
-    margin-right: -13px;
+    width: 52%;
+    /* margin-left: 130px; dùng margin thì đẩy qua phải->sai kt */
+    padding: 64px 0 0 125px;
 }
 
 .hero .info .title {
-    font-family: "Sen";
+    font-family: var(--second-font);
     font-weight: 700;
     font-size: 5.8rem;
     line-height: 1.17;
@@ -197,60 +195,68 @@ a {
 
 .hero .info .desc {
     margin-top: 22px;
-    font-weight: 400;
+    /* sau này thêm gì vào p sẽ ko bị dính */
     font-size: 1.85rem;
     line-height: 1.67;
     color: #5f5b53;
 }
 
 .hero .info .row {
-    margin-top: 38px;
+    margin: 38px 0 48px;
     display: flex;
     align-items: center;
 }
 
-.hero .info .btn {
+.hero .info .hero-btn {
     min-width: 180px;
-    padding: 24px 18px;
+    /* padding: 24px 18px; tạo chiều cao nút bằng line-height*/
+    line-height: 64px;
     background: var(--second-color);
 }
 
-.hero .info .video {
+.hero .watch-video {
+    border: none;
+    background: transparent;
     display: flex;
     align-items: center;
+    margin-left: 28px;
+    cursor: pointer;
 }
 
-.hero .info .video img {
-    display: inline-block;
+.hero .watch-video .icon {
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: inline-block;
     margin-left: 10px;
-    margin-bottom: -13px;
+    margin-bottom: -13px; */
 }
 
-.hero .info span {
+.hero .watch-video span {
+    margin-left: 14px;
     font-weight: 600;
     font-size: 1.8rem;
+    line-height: 1.67;
     color: #171100;
 }
 
-.hero .info .engagement {
-    margin-top: 48px;
+.hero .desc.stats {
+    margin: 8px 0 0 -28px;
 }
 
-.hero .row-2 {
-    margin-top: 8px;
-    display: flex;
-    gap: 28px;
-}
-
-.hero .row-2 .desc {
-    margin-top: 0;
-}
-.hero .row-2 strong {
-    font-family: "Sen";
+.hero .stats strong {
+    font-family: var(--second-font);
     font-weight: 700;
     font-size: 4.4rem;
+    line-height: 1.23;
     color: #171100;
-    margin-right: 12px;
+    padding-right: 12px;
+    margin-left: 28px;
 }
 
 /* -------------COURSES------------- */
