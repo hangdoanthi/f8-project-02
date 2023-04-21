@@ -261,31 +261,55 @@ a {
 
 /* -------------COURSES------------- */
 
-.courses header .sub-title {
-    font-family: "Sen";
-    font-weight: 700;
-    font-size: 3.8rem;
-    letter-spacing: -0.02em;
-    color: #171100;
-    padding-top: 200px;
+.courses {
+    padding: 65px 0;
+    margin-top: 135px;
 }
 
-.courses .row {
+.popular-hearder {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.courses .row .desc {
-    font-weight: 400;
+.popular-hearder .sub-title {
+    font-family: var(--second-color);
+    font-weight: 700;
+    font-size: 3.8rem;
+    letter-spacing: -0.02em;
+    line-height: 1.26;
+    color: #171100;
+}
+
+.popular-hearder .desc {
     font-size: 1.8rem;
     line-height: 1.67;
     color: #5f5b53;
-    width: 40%;
+    width: 458px;
     margin-top: 16px;
 }
 
-.courses .row .icon {
-    margin-right: 18px;
+.popular-hearder .control {
+    display: flex;
+    gap: 18px;
+}
+
+.popular-hearder .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--second-color);
+    color: var(--second-color);
+    background: transparent;
+}
+
+.popular-hearder .control-btn:hover {
+    color: #ffffff;
+    background: var(--second-color);
+    cursor: pointer;
 }
 
 .courses .list {
