@@ -416,9 +416,16 @@ a {
     padding: 96px 0;
 }
 
-.comment-quotes .quotes-item {
+.quotes-list {
     display: flex;
-    justify-content: center;
+    overflow: hidden;
+}
+
+.comment-quotes .quotes-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
 }
 
 .quotes-item .avatar {
