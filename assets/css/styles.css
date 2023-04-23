@@ -486,19 +486,15 @@ a {
 
 .learning-outcomes .report {
     display: flex;
-    margin-top: 200px;
+    margin-top: 135px;
+    padding: 65px 0;
     align-items: center;
-}
-
-.report .img-block,
-.report .body {
-    width: 50%;
+    justify-content: space-between;
 }
 
 .report .img-block {
     display: flex;
-    gap: 30px;
-    height: 438px;
+    gap: 0 30px;
     border-radius: 16px;
 }
 
@@ -510,16 +506,19 @@ a {
 }
 
 .report .img-block .image-1 {
-    align-self: flex-end;
+    margin-top: 34px;
 }
 
 .report .body {
-    margin-left: 117px;
-    padding: 58px 0;
+    width: 41%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; */
 }
 
 .report .body .title {
-    font-family: "Sen";
+    font-family: var(--second-font);
     font-weight: 700;
     font-size: 3.8rem;
     line-height: 1.26;
@@ -529,13 +528,12 @@ a {
 
 .report .body .desc {
     margin-top: 16px;
-    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.75;
     color: #5f5b53;
 }
 
-.report .body .btn {
+.report .body .cta-btn {
     margin-top: 32px;
     background: var(--second-color);
 }
@@ -543,19 +541,19 @@ a {
 /* -------------JOIN-LESSON------------- */
 
 .join-lesson .lesson {
-    margin-top: 200px;
+    padding: 65px 0;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .lesson .body {
-    width: 50%;
-    padding: 71px 0;
+    width: 49%;
 }
 
 .lesson .body .title {
-    font-family: "Sen";
+    font-family: var(--second-font);
     font-weight: 700;
     font-size: 3.8rem;
     line-height: 1.26;
@@ -565,7 +563,6 @@ a {
 
 .lesson .body .desc {
     margin-top: 16px;
-    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.75;
     color: #5f5b53;
@@ -587,9 +584,7 @@ a {
 
 .our-blog {
     background: #fffcf4;
-}
-.our-blog .blog {
-    margin-top: 200px;
+    margin-top: 135px;
     padding: 96px 0;
 }
 
@@ -600,7 +595,7 @@ a {
 }
 
 .our-blog .blog .sub-title {
-    font-family: "Sen";
+    font-family: var(--second-font);
     font-weight: 700;
     font-size: 3.8rem;
     letter-spacing: -0.02em;
@@ -609,7 +604,6 @@ a {
 
 .our-blog .blog .desc {
     margin-top: 16px;
-    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.75;
     color: #696262;
@@ -618,9 +612,14 @@ a {
 .our-blog .list {
     margin-top: 55px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between;
+    align-items: center; */
     gap: 30px;
+}
+
+.our-blog .list-item {
+    width: calc(33.33% - 20px);
+    border-radius: 16px;
 }
 
 .our-blog .list-item:hover {
@@ -640,22 +639,32 @@ a {
 
 .our-blog .list span {
     position: relative;
-    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
     font-size: 1.4rem;
     color: #5f5b53;
-    margin-left: 10px;
 }
 
 .our-blog .list span::before {
-    position: absolute;
-    top: 7px;
-    margin-left: -10px;
+    margin-right: 4px;
     content: "";
     display: inline-block;
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: #ffb900;
+    background: var(--second-color);
+}
+
+.our-blog .list span::after {
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    right: -27px;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #e2dfda;
 }
 
 .our-blog .list .title {
@@ -668,11 +677,8 @@ a {
 
 .our-blog .list .btn {
     margin-top: 12px;
-    padding: 18px 18px;
     min-width: 118px;
-    font-weight: 600;
     font-size: 1.4rem;
-    color: #ffffff;
 }
 
 .our-blog .list .btn:hover {
@@ -683,6 +689,29 @@ a {
     margin-top: 38px;
     display: flex;
     justify-content: center;
+    gap: 6px;
+}
+
+.our-blog .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5f5b53;
+    cursor: pointer;
+}
+.our-blog .dot.active {
+    background: var(--second-color);
+    cursor: default;
+}
+
+.abc {
+    display: flex;
+    overflow: hidden;
+}
+
+.abc .list {
+    width: 100%;
+    flex-shrink: 0;
 }
 
 /* -------------FOOTER------------- */
