@@ -728,12 +728,12 @@ footer .footer .body {
 }
 
 .footer .info {
-    width: 23%;
+    width: 35%;
 }
 
 .footer .info .desc {
     margin-top: 18px;
-    font-weight: 400;
+    max-width: 267px;
     font-size: 1.4rem;
     line-height: 1.86;
     color: #bfbcb2;
@@ -746,7 +746,7 @@ footer .footer .body {
 }
 
 .footer .column {
-    margin-left: 145px;
+    /* width: 65%; */
     display: flex;
     gap: 130px;
     justify-content: space-between;
@@ -781,7 +781,6 @@ footer .footer .body {
 .footer .column .list-item li,
 .footer .column .list-item a {
     margin-top: 12px;
-    font-weight: 400;
     line-height: 1.86;
     font-size: 1.4rem;
     color: #bfbcb2;
@@ -789,12 +788,12 @@ footer .footer .body {
 
 .footer .column .list-item span {
     font-weight: 600;
+    color: #ffffff;
 }
 
 .footer .copyright {
     margin-top: 28px;
     text-align: center;
-    font-weight: 400;
     font-size: 1.4rem;
     color: #807d74;
 }
